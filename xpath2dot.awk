@@ -20,20 +20,20 @@
 # so they can be used as node labels in dot
 # quoting allows spaces in names but causes other problems
 function sanitize(var){
-	gsub(/[ !"#$%&'()*+,\-./:;<=>?@[\\\]\^_`{|}~]+/, "_", var);
-	return var
+    gsub(/[ !"#$%&'()*+,\-./:;<=>?@[\\\]\^_`{|}~]+/, "_", var);
+    return var
 }
 
 
 
 BEGIN{
-	# graphs can be oriented verticaly  up/down (UD)
-	# or horizontaly left/right (LR)  which is the default here
-	# to change default on command line include
-	# -v ORIENT="UD"
-	if(! ORIENT)
-		ORIENT="LR"
-	FS="/";
+    # graphs can be oriented verticaly  up/down (UD)
+    # or horizontaly left/right (LR)  which is the default here
+    # to change default on command line include
+    # -v ORIENT="UD"
+    if(! ORIENT)
+        ORIENT="LR"
+    FS="/";
     penmax=10  # max penwidth
 }
 
@@ -43,14 +43,14 @@ BEGIN{
 # it is only the last two elements in each xpath we are capturing
 
 NF > 1 {
-	if(1 == match($NF, "@")){
-		att = sanitize(substr($NF,2));
-		leaf = sanitize($(NF-1));
-		node[leaf][att]++  # gathering but not using attribute usage counts
-	} else {
-		# storing edges in an assocative array means parallel edges collapse
-		edge[sanitize($(NF-1)) " -> " sanitize($(NF))]++;
-	}
+    if(1 == match($NF, "@")){
+        att = sanitize(substr($NF,2));
+        leaf = sanitize($(NF-1));
+        node[leaf][att]++  # gathering but not using attribute usage counts
+    } else {
+        # storing edges in an assocative array means parallel edges collapse
+        edge[sanitize($(NF-1)) " -> " sanitize($(NF))]++;
+    }
 }
 
 END{
@@ -61,21 +61,22 @@ END{
     if(norm < 1.0) norm = 1.0
     if(penmax && (norm > penmax)) norm = norm / penmax
 
-	print "digraph G{"
-	print "overlap=false"
-	print "rankdir=" ORIENT "; charset=\"utf-8\";"
-	for(n in node){
-		attributes = ""
-		for(a in node[n]){
-			attributes = attributes "|" a
-		}
-		print n " [label = \"{<" n "> " n "|" substr(attributes,2) "}\" shape = \"record\"];"
-	}
-	# note well
-	# edge weight relates to _reuse_ of element name pairs within the xml schema
-	# and not reuse of a particular element
-	for(e in edge){
-	    print e " [penwidth = \""(edge[e]/norm) "\", weight = \"" edge[e] "\"];"
-	}
-	print "}"
+    print "digraph G{"
+    print "overlap=false;"
+    print "rankdir=" ORIENT "; charset=\"utf-8\";"
+    print "node [label = <<TABLE border=\"0\" cellborder=\"2\" cellspacing=\"0\" cellpadding=\"4\" ><TR><TD style=\"rounded\"><B>\\N</B></TD></TR></TABLE>> shape = \"none\"];"
+    for(n in node){
+        attributes = ""
+        for(a in node[n]){
+            attributes = attributes "<TR><TD>" a "</TD></TR>"
+        }
+        print n " [label = <<TABLE border=\"0\" cellborder=\"1\" cellspacing=\"0\" cellpadding=\"4\"><TR><TD><B>" n "</B></TD></TR>" attributes "</TABLE>> shape = \"none\"];"
+    }
+    # note well
+    # edge weight relates to _reuse_ of element name pairs within the xml schema
+    # and not reuse of a particular element
+    for(e in edge){
+        print e " [penwidth = \""(edge[e]/norm) "\", weight = \"" edge[e] "\"];"
+    }
+    print "}"
 }
