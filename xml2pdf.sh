@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Convert XML structure to GraphViz file and render to PDF. Produces a .dot and .xml file in the same directory as the input file.
-# Usage: ./xml2pdf.sh <infile1.xml> [infile2.xml] [...]
-#
+# Convert XML structure to GraphViz file and render to PDF
 # Based on: https://github.com/TomConlin/xpath2dot
 
-AWK_OPTS="-v ORIENT=UD"
+AWK_OPTS="-v ORIENT=LR"
 DOT_OPTS="-Nfontname=Roboto"
 
 OLD_PWD=$(pwd)
