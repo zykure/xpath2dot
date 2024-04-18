@@ -1,0 +1,1113 @@
+{
+  "ClinVarSet": {
+    "@ID": "3115644",
+    "RecordStatus": "current",
+    "Title": "BRCA1:c.4357+2T>G AND Breast-ovarian cancer, familial 1",
+    "ReferenceClinVarAssertion": {
+      "@DateCreated": "2013-12-23",
+      "@DateLastUpdated": "2014-07-22",
+      "@ID": "190195",
+      "ClinVarAccession": {
+        "@Acc": "RCV000077146",
+        "@Version": "2",
+        "@Type": "RCV",
+        "@DateUpdated": "2014-07-23"
+      },
+      "RecordStatus": "current",
+      "ClinicalSignificance": {
+        "@DateLastEvaluated": "2012-09-24",
+        "ReviewStatus": "classified by multiple submitters",
+        "Description": "Pathogenic"
+      },
+      "Assertion": {
+        "@Type": "variation to disease"
+      },
+      "ObservedIn": [
+        {
+          "Sample": {
+            "Origin": "germline",
+            "Species": {
+              "@TaxonomyId": "9606",
+              "#text": "human"
+            },
+            "AffectedStatus": "not provided",
+            "NumberTested": "1"
+          },
+          "Method": {
+            "MethodType": "clinical testing"
+          },
+          "ObservedData": {
+            "@ID": "2681310",
+            "Attribute": {
+              "@integerValue": "1",
+              "@Type": "VariantAlleles"
+            }
+          }
+        },
+        {
+          "Sample": {
+            "Origin": "germline",
+            "Species": {
+              "@TaxonomyId": "9606",
+              "#text": "human"
+            },
+            "AffectedStatus": "yes"
+          },
+          "Method": {
+            "MethodType": "clinical testing"
+          },
+          "ObservedData": {
+            "@ID": "2688253",
+            "Attribute": {
+              "@integerValue": "1",
+              "@Type": "VariantAlleles"
+            }
+          }
+        }
+      ],
+      "MeasureSet": {
+        "@Type": "Variant",
+        "@ID": "91629",
+        "Measure": {
+          "@Type": "single nucleotide variant",
+          "@ID": "97106",
+          "Name": {
+            "ElementValue": {
+              "@Type": "Preferred",
+              "#text": "BRCA1:c.4357+2T>G"
+            }
+          },
+          "AttributeSet": [
+            {
+              "Attribute": {
+                "@Type": "HGVS, coding, LRG",
+                "@Change": "c.4357+2T>G",
+                "#text": "LRG_292t1:c.4357+2T>G"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "HGVS, coding, RefSeq",
+                "@Change": "c.4357+2T>G",
+                "#text": "NM_007294.3:c.4357+2T>G"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "HGVS, genomic, LRG",
+                "@Change": "g.135582T>G",
+                "#text": "LRG_292:g.135582T>G"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "HGVS, genomic, RefSeqGene",
+                "@Change": "g.135582T>G",
+                "#text": "NG_005905.2:g.135582T>G"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "HGVS, genomic, top level",
+                "@Change": "g.43082402A>C",
+                "#text": "NC_000017.11:g.43082402A>C"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "HGVS, genomic, top level, previous",
+                "@Change": "g.41234419A>C",
+                "#text": "NC_000017.10:g.41234419A>C"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "HGVS, non-coding",
+                "@Change": "n.4476+2T>G",
+                "#text": "U14680.1:n.4476+2T>G"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "Location",
+                "#text": "U14680.1:intron 13"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "MolecularConsequence",
+                "#text": "splice donor variant"
+              },
+              "XRef": [
+                {
+                  "@ID": "SO:0001575",
+                  "@DB": "Sequence Ontology"
+                },
+                {
+                  "@ID": "NM_007294.3:c.4357+2T>G",
+                  "@DB": "RefSeq"
+                }
+              ]
+            },
+            {
+              "Attribute": {
+                "@Type": "nucleotide change",
+                "#text": "IVS13+2T>G"
+              }
+            }
+          ],
+          "CytogeneticLocation": "17q21.31",
+          "SequenceLocation": [
+            {
+              "@Assembly": "GRCh38",
+              "@Chr": "17",
+              "@Accession": "NC_000017.11",
+              "@start": "43082402",
+              "@stop": "43082402",
+              "@variantLength": "1",
+              "@referenceAllele": "A",
+              "@alternateAllele": "C"
+            },
+            {
+              "@Assembly": "GRCh37",
+              "@Chr": "17",
+              "@Accession": "NC_000017.10",
+              "@start": "41234419",
+              "@stop": "41234419",
+              "@variantLength": "1",
+              "@referenceAllele": "A",
+              "@alternateAllele": "C"
+            }
+          ],
+          "MeasureRelationship": {
+            "@Type": "variant in gene",
+            "Name": {
+              "ElementValue": {
+                "@Type": "Preferred",
+                "#text": "breast cancer 1, early onset"
+              }
+            },
+            "Symbol": {
+              "ElementValue": {
+                "@Type": "Preferred",
+                "#text": "BRCA1"
+              }
+            },
+            "SequenceLocation": [
+              {
+                "@Assembly": "GRCh37",
+                "@Chr": "17",
+                "@Accession": "NC_000017.10",
+                "@start": "41196311",
+                "@stop": "41277499",
+                "@Strand": "-"
+              },
+              {
+                "@Assembly": "GRCh38",
+                "@Chr": "17",
+                "@Accession": "NC_000017.11",
+                "@start": "43044294",
+                "@stop": "43125482",
+                "@Strand": "-"
+              }
+            ],
+            "XRef": [
+              {
+                "@ID": "672",
+                "@DB": "Gene"
+              },
+              {
+                "@Type": "MIM",
+                "@ID": "113705",
+                "@DB": "OMIM"
+              }
+            ],
+            "Comment": {
+              "@DataSource": "NCBI curation",
+              "#text": "This gene is cited in the ACMG recommendations of 2013 (PubMed 23788249) for reporting incidental findings in exons."
+            }
+          },
+          "XRef": [
+            {
+              "@ID": "4476+2&base_change=T to G",
+              "@DB": "Breast Cancer Information Core (BIC) (BRCA1)"
+            },
+            {
+              "@Type": "rs",
+              "@ID": "80358152",
+              "@DB": "dbSNP"
+            }
+          ],
+          "Comment": {
+            "@DataSource": "Sharing Clinical Reports Project (SCRP)",
+            "#text": "Single site analysis"
+          }
+        },
+        "Name": {
+          "ElementValue": {
+            "@Type": "preferred name",
+            "#text": "BRCA1:c.4357+2T>G"
+          }
+        }
+      },
+      "TraitSet": {
+        "@Type": "Disease",
+        "@ID": "1917",
+        "Trait": {
+          "@ID": "4711",
+          "@Type": "Disease",
+          "Name": [
+            {
+              "ElementValue": {
+                "@Type": "Preferred",
+                "#text": "Breast-ovarian cancer, familial 1"
+              },
+              "XRef": {
+                "@ID": "Breast-ovarian+cancer%2C+familial+1/7865",
+                "@DB": "Genetic Alliance"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 1"
+              },
+              "XRef": [
+                {
+                  "@Type": "MIM",
+                  "@ID": "604370",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0001",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0002",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0003",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0004",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0005",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0006",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0007",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0008",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0009",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0010",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0011",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0012",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0013",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0014",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0015",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0016",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0017",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0018",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0019",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0020",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0021",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0022",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0023",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0024",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0025",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0026",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0027",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0028",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0029",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0030",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0031",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0032",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0033",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0034",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0035",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0036",
+                  "@DB": "OMIM"
+                },
+                {
+                  "@Type": "Allelic variant",
+                  "@ID": "113705.0037",
+                  "@DB": "OMIM"
+                }
+              ]
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "OVARIAN CANCER, SUSCEPTIBILITY TO"
+              },
+              "XRef": {
+                "@Type": "Allelic variant",
+                "@ID": "602667.0001",
+                "@DB": "OMIM"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "BREAST CANCER, FAMILIAL, SUSCEPTIBILITY TO, 1"
+              },
+              "XRef": {
+                "@ID": "604370",
+                "@DB": "OMIM"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "Breast cancer, familial 1"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "Breast-ovarian cancer, familial 1 and 2"
+              },
+              "XRef": {
+                "@ID": "GTR000310494",
+                "@DB": "Laboratory of Genetics,HUSLAB"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "BRCA1 Gene Mutation"
+              },
+              "XRef": {
+                "@ID": "GTR000501743",
+                "@DB": "Myriad Genetic Laboratories,Myriad Genetic Laboratories, Inc."
+              }
+            }
+          ],
+          "Symbol": [
+            {
+              "ElementValue": {
+                "@Type": "Preferred",
+                "#text": "BROVCA1"
+              },
+              "XRef": {
+                "@Type": "MIM",
+                "@ID": "604370",
+                "@DB": "OMIM"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "BRCA1"
+              },
+              "XRef": {
+                "@ID": "GTR000501196",
+                "@DB": "Department of Clinical Genetics,St. Elisabeth Cancer Institute"
+              }
+            },
+            {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "HBOC"
+              },
+              "XRef": {
+                "@ID": "GTR000501743",
+                "@DB": "Myriad Genetic Laboratories,Myriad Genetic Laboratories, Inc."
+              }
+            }
+          ],
+          "AttributeSet": [
+            {
+              "Attribute": {
+                "@Type": "public definition",
+                "#text": "Hereditary breast and ovarian cancer syndrome (HBOC), caused by a germline mutation in BRCA1 or BRCA2, is characterized by an increased risk for breast cancer, ovarian cancer, prostate cancer, and pancreatic cancer. The lifetime risk for these cancers in individuals with a mutation in BRCA1 or BRCA2: 40%-80% for breast cancer. 11%-40% for ovarian cancer. 1%-10% for male breast cancer. Up to 39% for prostate cancer. 1%-7% for pancreatic cancer. Individuals with BRCA2 mutations may also be at an increased risk for melanoma. Prognosis for BRCA1/2-related cancer depends on the stage at which the cancer is diagnosed; however, studies on survival have revealed conflicting results for individuals with germline BRCA1 or BRCA2 mutations when compared to controls."
+              },
+              "XRef": {
+                "@ID": "NBK1247",
+                "@DB": "GeneReviews"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "ModeOfInheritance",
+                "@integerValue": "262",
+                "#text": "Autosomal dominant inheritance"
+              },
+              "XRef": [
+                {
+                  "@ID": "GTR000507913",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000507930",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000509348",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000509349",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000017876",
+                  "@DB": "Molecular Genetics Laboratory - Diagnostics Genetics,LabPLUS - Auckland City Hospital"
+                },
+                {
+                  "@ID": "GTR000512816",
+                  "@DB": "Molecular Genetics Laboratory - Diagnostics Genetics,LabPLUS - Auckland City Hospital"
+                },
+                {
+                  "@ID": "GTR000501196",
+                  "@DB": "Department of Clinical Genetics,St. Elisabeth Cancer Institute"
+                },
+                {
+                  "@ID": "GTR000509980",
+                  "@DB": "Michigan Medical Genetics Laboratories,University of Michigan"
+                },
+                {
+                  "@ID": "GTR000509982",
+                  "@DB": "Michigan Medical Genetics Laboratories,University of Michigan"
+                },
+                {
+                  "@ID": "GTR000509983",
+                  "@DB": "Michigan Medical Genetics Laboratories,University of Michigan"
+                },
+                {
+                  "@ID": "GTR000509001",
+                  "@DB": "GENETIX Centro de Investigaci\u00f3n en Gen\u00e9tica Humana y Reproductiva"
+                },
+                {
+                  "@ID": "GTR000509002",
+                  "@DB": "GENETIX Centro de Investigaci\u00f3n en Gen\u00e9tica Humana y Reproductiva"
+                },
+                {
+                  "@ID": "GTR000320777",
+                  "@DB": "Unidad de Diagnostico Molecular,Instituto de Referencia Andino"
+                },
+                {
+                  "@ID": "GTR000330054",
+                  "@DB": "Institute of Human Genetics,Universit\u00e4tsmedizin Greifswald"
+                },
+                {
+                  "@ID": "GTR000021517",
+                  "@DB": "Molecular Diagnostic Laboratory,London Health Sciences Centre"
+                },
+                {
+                  "@ID": "GTR000505644",
+                  "@DB": "Centogene AG  - the Rare Disease Company,Centogene AG"
+                },
+                {
+                  "@ID": "GTR000512320",
+                  "@DB": "Centogene AG  - the Rare Disease Company,Centogene AG"
+                },
+                {
+                  "@ID": "GTR000501743",
+                  "@DB": "Myriad Genetic Laboratories,Myriad Genetic Laboratories, Inc."
+                },
+                {
+                  "@ID": "GTR000501746",
+                  "@DB": "Myriad Genetic Laboratories,Myriad Genetic Laboratories, Inc."
+                },
+                {
+                  "@ID": "GTR000512644",
+                  "@DB": "CGC Genetics"
+                },
+                {
+                  "@ID": "GTR000512645",
+                  "@DB": "CGC Genetics"
+                },
+                {
+                  "@ID": "GTR000501817",
+                  "@DB": "Molecular Genetics,Rabin Medical Center"
+                },
+                {
+                  "@ID": "GTR000325409",
+                  "@DB": "Laboratory of Human Genetics,Health Care Center GENOMED"
+                },
+                {
+                  "@ID": "GTR000509450",
+                  "@DB": "Fulgent Clinical Diagnostics Lab,Fulgent Diagnostics "
+                },
+                {
+                  "@ID": "GTR000509451",
+                  "@DB": "Fulgent Clinical Diagnostics Lab,Fulgent Diagnostics "
+                },
+                {
+                  "@ID": "GTR000509363",
+                  "@DB": "Vanak Pathobiology Laboratory,Vanak Pathobiology Laboratory"
+                },
+                {
+                  "@ID": "GTR000507653",
+                  "@DB": "PentaCoreLab"
+                },
+                {
+                  "@ID": "GTR000507764",
+                  "@DB": "PentaCoreLab"
+                },
+                {
+                  "@ID": "GTR000514601",
+                  "@DB": "Genomic Research Center,Shahid Beheshti University of Medical Sciences"
+                }
+              ]
+            },
+            {
+              "Attribute": {
+                "@Type": "age of onset",
+                "#text": "Variable"
+              },
+              "XRef": {
+                "@ID": "145",
+                "@DB": "Orphanet"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "disease mechanism",
+                "@integerValue": "273",
+                "#text": "loss of function"
+              },
+              "XRef": [
+                {
+                  "@ID": "GTR000507913",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000507930",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000509348",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000509349",
+                  "@DB": "Invitae "
+                },
+                {
+                  "@ID": "GTR000017876",
+                  "@DB": "Molecular Genetics Laboratory - Diagnostics Genetics,LabPLUS - Auckland City Hospital"
+                },
+                {
+                  "@ID": "GTR000512816",
+                  "@DB": "Molecular Genetics Laboratory - Diagnostics Genetics,LabPLUS - Auckland City Hospital"
+                },
+                {
+                  "@ID": "GTR000509980",
+                  "@DB": "Michigan Medical Genetics Laboratories,University of Michigan"
+                },
+                {
+                  "@ID": "GTR000509982",
+                  "@DB": "Michigan Medical Genetics Laboratories,University of Michigan"
+                },
+                {
+                  "@ID": "GTR000509983",
+                  "@DB": "Michigan Medical Genetics Laboratories,University of Michigan"
+                },
+                {
+                  "@ID": "GTR000509001",
+                  "@DB": "GENETIX Centro de Investigaci\u00f3n en Gen\u00e9tica Humana y Reproductiva"
+                },
+                {
+                  "@ID": "GTR000509002",
+                  "@DB": "GENETIX Centro de Investigaci\u00f3n en Gen\u00e9tica Humana y Reproductiva"
+                },
+                {
+                  "@ID": "GTR000320777",
+                  "@DB": "Unidad de Diagnostico Molecular,Instituto de Referencia Andino"
+                },
+                {
+                  "@ID": "GTR000330054",
+                  "@DB": "Institute of Human Genetics,Universit\u00e4tsmedizin Greifswald"
+                },
+                {
+                  "@ID": "GTR000021517",
+                  "@DB": "Molecular Diagnostic Laboratory,London Health Sciences Centre"
+                },
+                {
+                  "@ID": "GTR000505644",
+                  "@DB": "Centogene AG  - the Rare Disease Company,Centogene AG"
+                },
+                {
+                  "@ID": "GTR000512320",
+                  "@DB": "Centogene AG  - the Rare Disease Company,Centogene AG"
+                },
+                {
+                  "@ID": "GTR000501743",
+                  "@DB": "Myriad Genetic Laboratories,Myriad Genetic Laboratories, Inc."
+                },
+                {
+                  "@ID": "GTR000501746",
+                  "@DB": "Myriad Genetic Laboratories,Myriad Genetic Laboratories, Inc."
+                },
+                {
+                  "@ID": "GTR000512644",
+                  "@DB": "CGC Genetics"
+                },
+                {
+                  "@ID": "GTR000512645",
+                  "@DB": "CGC Genetics"
+                },
+                {
+                  "@ID": "GTR000501817",
+                  "@DB": "Molecular Genetics,Rabin Medical Center"
+                },
+                {
+                  "@ID": "GTR000325409",
+                  "@DB": "Laboratory of Human Genetics,Health Care Center GENOMED"
+                },
+                {
+                  "@ID": "GTR000509450",
+                  "@DB": "Fulgent Clinical Diagnostics Lab,Fulgent Diagnostics "
+                },
+                {
+                  "@ID": "GTR000509451",
+                  "@DB": "Fulgent Clinical Diagnostics Lab,Fulgent Diagnostics "
+                },
+                {
+                  "@ID": "GTR000509363",
+                  "@DB": "Vanak Pathobiology Laboratory,Vanak Pathobiology Laboratory"
+                },
+                {
+                  "@ID": "GTR000507653",
+                  "@DB": "PentaCoreLab"
+                },
+                {
+                  "@ID": "GTR000507764",
+                  "@DB": "PentaCoreLab"
+                },
+                {
+                  "@ID": "GTR000514601",
+                  "@DB": "Genomic Research Center,Shahid Beheshti University of Medical Sciences"
+                }
+              ]
+            },
+            {
+              "Attribute": {
+                "@Type": "prevalence",
+                "#text": "1-5 / 10 000"
+              },
+              "XRef": {
+                "@ID": "145",
+                "@DB": "Orphanet"
+              }
+            },
+            {
+              "Attribute": {
+                "@Type": "prevalence",
+                "#text": "Hereditary breast and ovarian cancer (HBOC) resulting from mutations in BRCA1 and BRCA2 is the most common form of both hereditary breast and ovarian cancers and occurs in all ethnic and racial populations. The overall prevalence of BRCA1/2 mutations is estimated to be from 1:400 to 1:800 [Ford et al 1994, Claus et al 1996, Whittemore et al 1997], but varies depending on ethnicity."
+              },
+              "Citation": [
+                {
+                  "@Type": "general",
+                  "URL": "http://www.ncbi.nlm.nih.gov/books/NBK1247/"
+                },
+                {
+                  "@Type": "general",
+                  "CitationText": "Ford et al 1994, Claus et al 1996, Whittemore et al 1997"
+                }
+              ],
+              "XRef": {
+                "@ID": "GTR000021517",
+                "@DB": "Molecular Diagnostic Laboratory,London Health Sciences Centre"
+              }
+            }
+          ],
+          "Citation": [
+            {
+              "@Type": "review",
+              "@Abbrev": "GeneReviews",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "20301425"
+              }
+            },
+            {
+              "@Type": "practice guideline",
+              "@Abbrev": "ACOG, 2009",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "19305347"
+              }
+            },
+            {
+              "@Type": "practice guideline",
+              "@Abbrev": "ACS, 2007",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "17392385"
+              }
+            },
+            {
+              "@Type": "practice guideline",
+              "@Abbrev": "NSGC, 2004",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "15604628"
+              }
+            },
+            {
+              "@Type": "practice guideline",
+              "@Abbrev": "NSGC, 2007",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "17508274"
+              }
+            },
+            {
+              "@Type": "Recommendation",
+              "@Abbrev": "ACMG, 2013",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "23788249"
+              }
+            },
+            {
+              "@Type": "practice guideline",
+              "@Abbrev": "NCCN, 2013",
+              "URL": "http://www.nccn.org/professionals/physician_gls/pdf/genetics_screening.pdf"
+            },
+            {
+              "@Type": "Position Statement",
+              "@Abbrev": "ASCO, 2010",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "20065170"
+              }
+            },
+            {
+              "@Type": "Suggested Reading",
+              "@Abbrev": "Phillips et al., 2013",
+              "ID": {
+                "@Source": "PubMed",
+                "#text": "23918944"
+              }
+            },
+            {
+              "@Type": "Suggested Reading",
+              "@Abbrev": "Domchek et al., 2010",
+              "ID": {
+                "@Source": "pmc",
+                "#text": "2948529"
+              }
+            }
+          ],
+          "XRef": [
+            {
+              "@ID": "C2676676",
+              "@DB": "MedGen"
+            },
+            {
+              "@ID": "145",
+              "@DB": "Orphanet"
+            },
+            {
+              "@Type": "MIM",
+              "@ID": "604370",
+              "@DB": "OMIM"
+            }
+          ]
+        }
+      }
+    },
+    "ClinVarAssertion": [
+      {
+        "@ID": "189345",
+        "ClinVarSubmissionID": {
+          "@localKey": "SCRP_var_1220",
+          "@title": "NM_007294.3:c.4357+2T>G AND Breast-ovarian cancer, familial 1",
+          "@submitterDate": "2013-08-08",
+          "@submitter": "Sharing Clinical Reports Project (SCRP)"
+        },
+        "ClinVarAccession": {
+          "@Acc": "SCV000108943",
+          "@Version": "1",
+          "@Type": "SCV",
+          "@OrgID": "500037",
+          "@DateUpdated": "2014-06-23"
+        },
+        "RecordStatus": "current",
+        "ClinicalSignificance": {
+          "@DateLastEvaluated": "2012-09-24",
+          "ReviewStatus": "classified by single submitter",
+          "Description": "Pathogenic"
+        },
+        "Assertion": {
+          "@Type": "variation to disease"
+        },
+        "ObservedIn": {
+          "Sample": {
+            "Origin": "germline",
+            "Species": "human",
+            "AffectedStatus": "not provided",
+            "NumberTested": "1"
+          },
+          "Method": {
+            "MethodType": "clinical testing"
+          },
+          "ObservedData": {
+            "Attribute": {
+              "@Type": "VariantAlleles",
+              "#text": "1"
+            }
+          }
+        },
+        "MeasureSet": {
+          "@Type": "Variant",
+          "Measure": {
+            "@Type": "Variation",
+            "AttributeSet": {
+              "Attribute": {
+                "@Type": "nucleotide change",
+                "#text": "IVS13+2T>G"
+              }
+            },
+            "MeasureRelationship": {
+              "@Type": "variant in gene",
+              "Symbol": {
+                "ElementValue": {
+                  "@Type": "Preferred",
+                  "#text": "BRCA1"
+                }
+              }
+            }
+          }
+        },
+        "TraitSet": {
+          "@Type": "Disease",
+          "Trait": {
+            "@Type": "Disease",
+            "Name": {
+              "ElementValue": {
+                "@Type": "Preferred",
+                "#text": "Breast-ovarian cancer, familial 1"
+              }
+            }
+          }
+        }
+      },
+      {
+        "@ID": "261969",
+        "ClinVarSubmissionID": {
+          "@localKey": "U14680.1:n.4476+2T>G|MedGen:C2676676",
+          "@submitter": "Breast Cancer Information Core (BIC) (BRCA1)",
+          "@submitterDate": "2014-03-28"
+        },
+        "ClinVarAccession": {
+          "@Acc": "SCV000145071",
+          "@Version": "1",
+          "@Type": "SCV",
+          "@OrgID": "504196",
+          "@DateUpdated": "2014-06-23"
+        },
+        "RecordStatus": "current",
+        "ClinicalSignificance": {
+          "@DateLastEvaluated": "1999-06-22",
+          "ReviewStatus": "classified by single submitter",
+          "Description": "Pathogenic"
+        },
+        "Assertion": {
+          "@Type": "variation to disease"
+        },
+        "ObservedIn": {
+          "Sample": {
+            "Origin": "germline",
+            "Species": {
+              "@TaxonomyId": "9606",
+              "#text": "human"
+            },
+            "AffectedStatus": "yes"
+          },
+          "Method": {
+            "MethodType": "clinical testing"
+          },
+          "ObservedData": {
+            "Attribute": {
+              "@Type": "VariantAlleles",
+              "@integerValue": "1"
+            }
+          }
+        },
+        "MeasureSet": {
+          "@Type": "Variant",
+          "Measure": {
+            "@Type": "Variation",
+            "Name": {
+              "ElementValue": {
+                "@Type": "Alternate",
+                "#text": "IVS13+2T>G"
+              }
+            },
+            "AttributeSet": [
+              {
+                "Attribute": {
+                  "@Type": "Location",
+                  "#text": "U14680.1:intron 13"
+                }
+              },
+              {
+                "Attribute": {
+                  "@Type": "HGVS",
+                  "#text": "U14680.1:n.4476+2T>G"
+                }
+              }
+            ],
+            "XRef": {
+              "@DB": "dbSNP",
+              "@ID": "80358152",
+              "@Type": "rsNumber"
+            }
+          }
+        },
+        "TraitSet": {
+          "@Type": "Disease",
+          "Trait": {
+            "@Type": "Disease",
+            "Name": {
+              "ElementValue": {
+                "@Type": "Preferred",
+                "#text": "Breast-ovarian cancer, familial 1"
+              }
+            },
+            "XRef": {
+              "@DB": "MedGen",
+              "@ID": "C2676676",
+              "@Type": "CUI"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

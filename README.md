@@ -20,27 +20,38 @@ Starting with a XML file which might change or go away from
 wget -q ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/sample_xml/RCV000077146.xml
 ```
 
-Which I will keep a snapshot of [here](https://raw.githubusercontent.com/TomConlin/xpath2dot/master/RCV000077146.xml).
+Which I will keep a snapshot of [here](https://raw.githubusercontent.com/zykure/xpath2dot/master/examples/RCV000077146.xml).
 
 
 ```
-xmlstarlet el -u RCV000077146.xml | xpath2dot.awk | dot -T png > xpath2dot_demo.png
+xmlstarlet el -u RCV000077146.xml | xpath2dot.py | dot -T png > xpath2dot_demo.png
+xmlstarlet el -v RCV000077146.xml | xpath2dot.py | dot -T png > xpath2dot_demo.png
 ```
 
 ### Result:
 
-
-![Example xpath2dot output](https://raw.githubusercontent.com/TomConlin/xpath2dot/master/xpath2dot_demo.png)
+![Example xpath2dot output](https://raw.githubusercontent.com/zykure/xpath2dot/master/examples/RCV000077146.xml.png)
 
 
 ### More Usage:
 
-Include XML attributes and change orientation to vertical
+Include XML attributes:
 
 ```
-xmlstarlet el -a RCV000077146.xml | sort -u | \
- xpath2dot.awk -v ORIENT="UD" | dot -T png > xpath2dot_demo_att.png
+xmlstarlet el -a RCV000077146.xml | sort -u | xpath2dot.awk | dot -T png > xpath2dot_demo.png
 ```
 ### Result:
 
-![Example xpath2dot with attributes output](https://raw.githubusercontent.com/TomConlin/xpath2dot/master/xpath2dot_demo_att.png)
+![Example xpath2dot with attributes output](https://raw.githubusercontent.com/zykure/xpath2dot/master/examples/RCV000077146.xml+attr.png)
+
+
+### Even More Usage:
+
+Include XML name references:
+
+```
+xmlstarlet el -v RCV000077146.xml | xpath2dot.awk | dot -T png > xpath2dot_demo.png
+```
+### Result:
+
+![Example xpath2dot with references output](https://raw.githubusercontent.com/zykure/xpath2dot/master/examples/RCV000077146.xml+name.png)
