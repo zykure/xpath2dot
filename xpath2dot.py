@@ -33,6 +33,7 @@
 def sanitize(s):
     return s.replace(r' !"#$%&\'()*+,-./:;<=>?@[\\]^`{|}~/', "__")
 
+PENMIN = 2
 PENMAX = 5  # max penwidth
 RANKDIR = "LR"
 FONTNAME = "Roboto"
@@ -198,22 +199,22 @@ for n in node:
 # and not reuse of a particular element
 print()
 for e in edge:
-    print(f"    {e[0]} -> {e[1]} [penwidth = \"{edge[e]/norm:.3f}\", weight = \"{edge[e]:.3f}\"];")
+    print(f"    {e[0]} -> {e[1]} [penwidth = \"{PENMIN+(edge[e]/norm-1):.3f}\", weight = \"{edge[e]:.3f}\"];")
 
 print()
 for e in edge2:
-    print(f"    {e[0]} -> {e[1]} [penwidth = \"{edge2[e]/norm2:.3f}\", weight = \"{edge2[e]:.3f}\", style = dashed, dir = both];")
+    print(f"    {e[0]} -> {e[1]} [penwidth = \"{PENMIN+(edge2[e]/norm2-1):.3f}\", weight = \"{edge2[e]:.3f}\", style = dashed, dir = both];")
 
 print()
 print("subgraph cluster_01{")
 if edge:
     print(f"    A1 [label = {gtable(ghead('A'))} shape = none];")
     print(f"    B1 [label = {gtable(ghead('B'))} shape = none];")
-    print(f"    A1 -> B1 [label = \"Child Element\", penwidth = \"1\", weight = \"1\"];")
+    print(f"    A1 -> B1 [label = \"Child Element\", penwidth = \"{PENMIN}\", weight = \"1\"];")
 if edge2:
     print(f"    A2 [label = {gtable(ghead('A'))} shape = none];")
     print(f"    B2 [label = {gtable(ghead('B'))} shape = none];")
-    print(f"    A2 -> B2 [label = \"Name Reference\", penwidth = \"1\", weight = \"1\", style = dashed, dir = both];")
+    print(f"    A2 -> B2 [label = \"Name Reference\", penwidth = \"{PENMIN}\", weight = \"1\", style = dashed, dir = both];")
 print("}")
 
 print()
